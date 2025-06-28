@@ -50,14 +50,14 @@ public class AboutService {
 	    
 	    if (optionalAbout.isPresent()) {
 	        About about = optionalAbout.get();
-	        // Güncellenecek alanları DTO'dan alıp entity'e set et
+	        
 	        about.setText(dto.getText());
 	        about.setTitle(dto.getTitle());
 	        about.setUrl(dto.getUrl());
 
 	        About updated = aboutRepository.save(about);
 
-	        // Güncellenmiş entity'den DTO oluşturup döndür
+	        
 	        AboutDTO updatedDto = new AboutDTO();
 	        updatedDto.setId(updated.getId());
 	        updatedDto.setText(updated.getText());

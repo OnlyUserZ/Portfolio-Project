@@ -1,6 +1,4 @@
 package com.website.websites.dto;
-//CommentDTO.java
-
 
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
